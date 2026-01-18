@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Staff Umicare</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Dashboard Umicare</div>
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="#" id="logoutBtn">Logout</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h2 class="section-title">Senarai Tempahan</h2>
+
+  <table style="width:100%; background:white; border-radius:20px; padding:20px;">
+    <thead>
+      <tr>
+        <th>Nama Pesakit</th>
+        <th>Umur</th>
+        <th>Penjaga</th>
+        <th>Telefon</th>
+        <th>Jenis</th>
+        <th>Tarikh</th>
+      </tr>
+    </thead>
+    <tbody id="bookingList"></tbody>
+  </table>
+</section>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Tempahan Umicare</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Umicare</div>
+  <nav>
+    <a href="index.html">Utama</a>
+    <a href="about.html">Tentang Kami</a>
+    <a href="gallery.html">Galeri</a>
+    <a href="pengasas.html">Pengasas</a>
+    <a href="booking.html">Tempahan</a>
+    <a href="login.html">Staff Login</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h2 class="section-title">Tempahan Umicare</h2>
+
+  <div class="login-box">
+    <form id="bookingForm">
+      <input type="text" id="namaPesakit" placeholder="Nama Pesakit / Warga Emas" required>
+      <input type="number" id="umur" placeholder="Umur" required>
+      <input type="text" id="ic" placeholder="No Kad Pengenalan" required>
+      <input type="text" id="namaPenjaga" placeholder="Nama Penjaga" required>
+      <input type="tel" id="telefon" placeholder="No Telefon" required>
+
+      <select id="jenisTempahan">
+        <option value="Harian">Harian</option>
+        <option value="Mingguan">Mingguan</option>
+        <option value="Bulanan">Bulanan</option>
+      </select>
+
+      <input type="date" id="tarikh" required>
+
+      <button type="submit">Hantar Tempahan</button>
+    </form>
+  </div>
+</section>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/booking.js"></script>
+
+</body>
+</html>
